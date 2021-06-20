@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { v4 as uuid } from 'uuid';
+import './ContactForm.css';
 
 const INITIAL_STATE = {
   name: '',
@@ -33,10 +34,9 @@ export class ContactForm extends Component {
   };
 
   render() {
-    console.log(this.state);
     const { name, number } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form class="form" onSubmit={this.handleSubmit}>
         <label>
           Name
           <input name="name" value={name} onChange={this.handleChange} />

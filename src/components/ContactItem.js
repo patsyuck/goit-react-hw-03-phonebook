@@ -1,6 +1,8 @@
+import './ContactItem.css';
+
 const ContactItem = ({ id, name, number, onClick }) => {
   return (
-    <li key={id}>
+    <li class="item" key={id}>
       {name}: {number}
       <button
         onClick={() => {
