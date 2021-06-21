@@ -9,6 +9,7 @@ const ContactList = ({ friends, filter, onClick }) => {
         )
         .map(friend => (
           <ContactItem
+            key={friend.id}
             id={friend.id}
             name={friend.name}
             number={friend.number}
